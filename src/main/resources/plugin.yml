@@ -1,0 +1,19 @@
+name: OggyGrace
+version: '${project.version}'
+main: com.oggy.oggygrace.OggyGrace
+api-version: '1.21'
+description: Survival grace period, End portal lock and small anti-lag
+commands:
+  grace:
+    description: Start/stop the survival grace period
+    usage: /grace <start|stop|status> [time]
+  endlockmeow:
+    description: Lock the End portal for everyone
+    usage: /endlockmeow
+  endunlockmeow:
+    description: Unlock the End portal (admins only)
+    usage: /endunlockmeow
+permissions:
+  oggygrace.admin:
+    description: Use /grace start|stop, /endlockmeow and /endunlockmeow
+    default: op

@@ -1,0 +1,11 @@
+# The world used for the grace period (whole world)
+survival-world: survival
+
+# ---------- Anti lag ----------
+# view-distance: chunks players can SEE. simulation-distance: chunks that actually
+# tick (mobs, crops, redstone). Lower simulation-distance = much less lag.
+# Chunks outside simulation-distance of every player are not ticked at all.
+anti-lag:
+  enabled: true
+  view-distance: 8
+  simulation-distance: 5
