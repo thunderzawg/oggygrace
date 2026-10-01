@@ -218,7 +218,7 @@ public final class OggyGrace extends JavaPlugin implements Listener, TabExecutor
                 graceTotal = secs * 1000L;
                 graceWarned = false;
                 saveData();
-                ensureBar() 
+                ensureBar(); 
                 tickGrace();
                 for (Player p : Bukkit.getOnlinePlayers()) updateBarFor(p);
                 broadcastSurvival("Grace period started for " + formatTime(secs)
